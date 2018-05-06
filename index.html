@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>ToDo app</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid height">
+			<header>
+				<div class="row">
+					<div class="col-12">
+						<h1 class="text-center header__text">ToDo app</h1>
+					</div>
+				</div>
+			</header>
+			<div class="row">
+				<div class="col-12 text-center form-box">
+					<form action="#">
+						<div class="form-group">
+							<input id="taskInput" class="form-control" type="text" placeholder="Add task">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="wrapper">
+						<ul id="taskList" class="list-group"></ul>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="buttons-wrapper d-flex justify-content-around">
+						<button id="deleteCompletedBtn" class="btn btn-warning" onclick="deleteCompleted()">Delete completed tasks</button>
+						<button id="clearTasksBtn" class="btn btn-danger" onclick="deleteAll()">Clear list</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/app.js"></script>
+	</body>
+</html>
